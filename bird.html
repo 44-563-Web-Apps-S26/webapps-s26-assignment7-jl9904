@@ -72,77 +72,160 @@
     </header>
 
     <div class="container">
+    <div class="alert alert-info mt-3">
+        Click on the locations to find the birds, watch out for the forbidden statue.
+    </div>
 
-        <div class="alert alert-info">
-            Click on the locations to find the birds, watch out for the forbidden statue.
+    <div id="locations" class="status-box bg-light border">Number of locations checked is zero.</div>
+    <div id="score" class="status-box bg-secondary text-white">Score is zero.</div>
+
+    <<div class="d-flex justify-content-center mt-4">
+        <div class="btn btn-custom-fuchsia" onclick="help()">Click for help.</div>
+    </div>
+
+    <div id="help" class="alert alert-warning mt-4 text-center">Help report</div>
+
+    <div class="bird-grid">
+        <div class="bird-row">
+            <div class="bird-location"><img src="j.jpg" id="img-0" onclick="check(0)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-1" onclick="check(1)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-2" onclick="check(2)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-3" onclick="check(3)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-4" onclick="check(4)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-5" onclick="check(5)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-6" onclick="check(6)"></div>
         </div>
-
-        <div id="locations" class="status-box bg-light border">
-            Number of locations checked is zero.
+        <div class="bird-row">
+            <div class="bird-location"><img src="j.jpg" id="img-7" onclick="check(7)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-8" onclick="check(8)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-9" onclick="check(9)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-10" onclick="check(10)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-11" onclick="check(11)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-12" onclick="check(12)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-13" onclick="check(13)"></div>
         </div>
-
-        <div id="score" class="status-box bg-secondary text-white">
-            Score is zero.
+        <div class="bird-row">
+            <div class="bird-location"><img src="j.jpg" id="img-14" onclick="check(14)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-15" onclick="check(15)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-16" onclick="check(16)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-17" onclick="check(17)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-18" onclick="check(18)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-19" onclick="check(19)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-20" onclick="check(20)"></div>
         </div>
-
-        <div class="d-flex justify-content-center mt-4">
-            <div class="btn btn-custom-fuchsia" onclick="/* Help logic goes here */">
-                Click for help.
-            </div>
+        <div class="bird-row">
+            <div class="bird-location"><img src="j.jpg" id="img-21" onclick="check(21)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-22" onclick="check(22)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-23" onclick="check(23)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-24" onclick="check(24)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-25" onclick="check(25)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-26" onclick="check(26)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-27" onclick="check(27)"></div>
         </div>
-
-        <div id="help" class="alert alert-warning mt-2">
-            Help report
-        </div>
-
-        <div class="bird-grid">
-            <div class="bird-row">
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-            </div>
-            <div class="bird-row">
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-            </div>
-            <div class="bird-row">
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-            </div>
-            <div class="bird-row">
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-            </div>
-            <div class="bird-row">
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-                <div class="bird-location"><img src="j.jpg" alt="Jacaranda tree"></div>
-            </div>
+        <div class="bird-row">
+            <div class="bird-location"><img src="j.jpg" id="img-28" onclick="check(28)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-29" onclick="check(29)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-30" onclick="check(30)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-31" onclick="check(31)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-32" onclick="check(32)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-33" onclick="check(33)"></div>
+            <div class="bird-location"><img src="j.jpg" id="img-34" onclick="check(34)"></div>
         </div>
     </div>
+  </div>
+
+  <script>
+    const ids = [
+        "img-0", "img-1", "img-2", "img-3", "img-4", "img-5", "img-6",
+        "img-7", "img-8", "img-9", "img-10", "img-11", "img-12", "img-13",
+        "img-14", "img-15", "img-16", "img-17", "img-18", "img-19", "img-20",
+        "img-21", "img-22", "img-23", "img-24", "img-25", "img-26", "img-27",
+        "img-28", "img-29", "img-30", "img-31", "img-32", "img-33", "img-34"
+    ];
+
+    //declare all the variables from 4.4 to 4.12
+    let score = 0;
+    let locationsVisited = 0;
+    let lastLocation = 0;
+    let statueLocation = 19;
+    let toucanLocation = 14;
+    let lorikeetLocations = [3, 25];
+    let buntingLocations = [2, 5, 11, 20, 21];
+    let gameOver = false;
+
+    function check(position) {
+        if (gameOver) return;
+
+        let id = ids[position];
+        let imgElement = document.getElementById(id);
+
+        if (position === statueLocation) {
+            imgElement.src = "goldstat.jpg";
+            gameOver = true;
+            score -= 3;
+        } else if (position === toucanLocation) {
+            imgElement.src = "toucantina.jpeg";
+            score += 5;
+            imgElement.onclick = null; // Scoring squares trigger once
+        } else if (lorikeetLocations.includes(position)) {
+            imgElement.src = "lorikii.jpg";
+            score += 3;
+            imgElement.onclick = null;
+        } else if (buntingLocations.includes(position)) {
+            imgElement.src = "bunty.jpg";
+            score += 1;
+            imgElement.onclick = null;
+        } else {
+            imgElement.src = "j.jpg"; // Stays/Reset to bush
+        }
+
+        locationsVisited++;
+        lastLocation = position;
+
+        // Update UI
+        document.getElementById("locations").innerText = `Number of locations checked is ${locationsVisited}.`;
+        document.getElementById("score").innerText = `Score is ${score}.`;
+    }
+
+    function help() {
+        let row = Math.floor(lastLocation / 7);
+        let col = lastLocation % 7;
+
+        // buntingLocations check that returns cheep (4 closest neighbors with wrap-around)
+        let neighbors = [
+            (lastLocation + 1) % 35,
+            (lastLocation + 34) % 35,
+            (lastLocation + 7) % 35,
+            (lastLocation + 28) % 35
+        ];
+        
+        for (let n of neighbors) {
+            if (buntingLocations.includes(n)) {
+                document.getElementById("help").innerText = "cheep";
+                return "cheep";
+            }
+        }
+
+        // toucanLocations check that returns caw(9 closest locations, no wrap)
+        let tRow = Math.floor(toucanLocation / 7);
+        let tCol = toucanLocation % 7;
+        if (Math.abs(row - tRow) <= 1 && Math.abs(col - tCol) <= 1) {
+            document.getElementById("help").innerText = "caw";
+            return "caw";
+        }
+
+        // statueLocations check that returns thrrum (9 closest locations, no wrap)
+        let sRow = Math.floor(statueLocation / 7);
+        let sCol = statueLocation % 7;
+        if (Math.abs(row - sRow) <= 1 && Math.abs(col - sCol) <= 1) {
+            document.getElementById("help").innerText = "thrrum";
+            return "thrrum";
+        }
+        // if none of the above, return silence
+        document.getElementById("help").innerText = "silence";
+        return "silence";
+    }
+  </script>
 </body>
 
 </html>
