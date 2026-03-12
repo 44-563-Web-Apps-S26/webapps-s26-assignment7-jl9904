@@ -34,8 +34,10 @@
     <input type="text" id="listInput" placeholder="Enter text here">
 
     <button onclick="makeNewDiv()">Add end</button>
+    <button onclick="addFront()">Add front</button>
+    <button onclick="remove()">Remove</button>
 
-    <p>Press the button to create a new element of type div and then add it to the container.</p>
+    <p>Use the buttons to modify the list of divs below.</p>
 
     <div class="flex-container" id="target">
         <div class="divlist">row item 1</div>
@@ -55,5 +57,26 @@
         let container = document.getElementById('target');
         container.appendChild(element);
     }
+	function addFront() {
+        let inputValue = document.getElementById("listInput").value;
+        let element = document.createElement("div");
+        element.innerHTML = inputValue;
+        element.className = "divlist";
+
+        let container = document.getElementById('target');
+        container.insertBefore(element, container.firstChild);
+    }
+	function remove() {
+        let divListItems = document.getElementsByClassName("divlist");
+        let length = divListItems.length;
+
+        if (length > 0) {
+            if (length > 1) {
+                divListItems[1].remove();
+            } else {
+                divListItems[0].remove();
+            }
+        }
+	}
 </script>
 </html>
